@@ -1,0 +1,222 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Creating a Todo app </title>
+</head>
+<style>
+    * {
+        margin: 0;
+        padding: 0;
+    }
+
+    .logo {
+        font-size: 1.5rem;
+        padding-left: 12px;
+        padding-top: 7px;
+    }
+
+    header {
+        background-color: black;
+        color: antiquewhite;
+        display: flex;
+        height: 10vh;
+    }
+
+    header nav {
+        position: absolute;
+        right: 0px;
+        display: flex;
+
+    }
+
+    header nav ul {
+        display: flex;
+        list-style: none;
+    }
+
+    header nav ul li {
+        padding: 7px 70px;
+    }
+
+    header nav ul li a {
+        text-decoration: none;
+        color: white;
+        padding: 10px 13px;
+
+    }
+
+    header nav ul li a:hover {
+        background-color: rgb(249, 191, 116);
+        border-radius: 12px;
+    }
+
+    div input {
+        width: 191.3px;
+        height: 26.2px;
+        border-radius: 5px;
+    }
+
+    div button {
+        width: 117.3px;
+        height: 28.2px;
+        margin: 5px 2px;
+        border-radius: 12px;
+        background-color: rgb(12, 125, 238);
+    }
+
+    div button a {
+        color: white;
+        text-decoration: none;
+
+    }
+
+    .container {
+        width: 70vw;
+        margin: auto;
+        padding: 12px 12px;
+    }
+
+    #cont {
+        border: 2px solid black;
+        width: 40vw;
+        display: flex;
+        flex-direction: column;
+        margin: auto;
+        border-radius: 23px;
+        padding: 12px 12px;
+    }
+
+    #cont textarea {
+        width: 25vw;
+        margin: auto;
+        border-radius: 12px;
+    }
+
+    .notescont {
+      /*  border: 2px solid rgb(20, 192, 11);*/
+        width: 90vw;
+        height: 75vh;
+        margin: auto;
+        display: flex;
+        box-sizing: border-box;
+        display: flex;
+        flex-wrap: wrap;
+    }
+
+    .card {
+        border: 2px solid blue;
+        border-radius: 12px;
+        width: 20vw;
+        height: 60vh;
+        margin: 12px 12px;
+    }
+
+    #notebtn {
+        width: 123px;
+        background-color: blue;
+        color: white;
+        margin: 12px;
+        cursor: pointer;
+    }
+
+    #space {
+        border: 2px solid rgb(90, 12, 12);
+        height: 40vh;
+        width: 15vw;
+        margin: auto;
+        padding: auto;
+        border-radius: 12px;
+
+    }
+    #space p{
+        padding: 12px 12px;
+    }
+
+    #date {
+        border: 2px solid green;
+        width: 115px;
+        height: 35px;
+        display: block;
+        margin: 12px;
+
+    }
+
+    #time {
+        border: 2px solid rgb(255, 220, 43);
+        width: 115px;
+        height: 35px;
+        display: block;
+        margin: 12px;
+
+    }
+
+    #centre {
+        display: flex;
+    }
+
+    #noteadd h3 {
+        width: 12vw;
+        margin: auto;
+    }
+
+    #update input {
+        margin: auto;
+        width: 45vw;
+        display: flex;
+        margin-bottom: 12px;
+        border-radius: 23px;
+        padding: 8px;
+        font-size: large;
+
+    }
+
+    #text1 {
+        margin-bottom: 15px;
+    }
+</style>
+
+<body>
+    <header>
+        <div class="logo">TO-DO-LIST</div>
+        <nav class=".navbar">
+            <ul>
+                <li><a href="#">Home</a></li>
+                <li><a href="#">Types</a></li>
+                <li><a href="#">Date</a></li>
+            </ul>
+            <div id="search">
+                <input type="text" id="searchbar">
+                <button type="button" id="searchbtn"><a href="">Search</a> </button>
+            </div>
+        </nav>
+    </header>
+    <br>
+    <hr>
+    <h3>Create a TODO APP Using javascript , HTMl , CSS</h3>
+    <hr>
+    <div class="container">
+        <div id="cont">
+            <textarea name="" id="text1" cols="30" rows="2" type="text"></textarea>
+            <textarea name="" id="text2" cols="70" rows="10" type="text"></textarea>
+            <button type="button" id="btnsubmit"><a href="#">Add Note</a></button>
+        </div>
+    </div>
+    <hr>
+    <br>
+    <div >
+        <input id="update"  type="text" placeholder="for the Updation">
+    </div>
+    <div class="notescont" id="notescont1">
+       
+
+
+
+    </div>
+</body>
+
+</html>
+<script src="task6.js"></script>

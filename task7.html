@@ -1,0 +1,182 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>TAsk 7 in javascript</title>
+</head>
+<style>
+    .container {
+        border: 2px solid red;
+        height: 80vh;
+    }
+
+    .cont {
+        border: 2px solid black;
+        height: 50vh;
+        width: 25vw;
+        margin: auto;
+        margin-top: 15px;
+        border-radius: 23px;
+        background-color: rgb(238, 177, 255);
+    }
+
+    .cont .case {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        padding: 12px 12px;
+    }
+
+    .uname1,
+    .pwd1,
+    .sub,
+    .col {
+        margin: 15px;
+    }
+
+    .sub #btn {
+        width: 89px;
+        border-radius: 12px;
+        height: 24px;
+        cursor: pointer;
+    }
+
+    .uname1 #uname {
+        border-radius: 12px;
+        height: 24px;
+        font-family: 'Times New Roman', Times, serif;
+    }
+
+    #uname {
+        color: rgb(11, 16, 16);
+        font-size: 15px;
+        padding-left: 12px;
+
+    }
+
+    #pwd {
+        padding-left: 12px;
+
+    }
+
+    .pwd1 #pwd {
+        border-radius: 12px;
+        height: 24px;
+    }
+
+    #specifier {
+        border: 2px solid blue;
+        width: 167px;
+    }
+
+    .container1 {
+        margin-top: 23px;
+        border: 2px solid black;
+    }
+
+    #cont1 {
+        border: 2px solid blue;
+        border-radius: 23px;
+        height: 36vh;
+        width: 20vw;
+        display: flex;
+        flex-direction: column;
+        margin: auto;
+        padding: 23px 12px;
+    }
+
+    #btn1 {
+        width: 170px;
+        height: 32px;
+        margin: auto;
+        cursor: pointer;
+        border-radius: 23px;
+    }
+    #para{
+        border: 2px solid red;
+        height: 50px;
+        display: flex;
+        justify-content: center;
+    }
+
+    #align {
+        display: flex;
+        margin-bottom: 23px;
+       }
+
+    #bottombtn {
+        margin-top: 68px;
+        display: flex;
+   }
+</style>
+
+<body>
+    <h3>Task 7 in javascript </h3>
+    <div class="container">
+        <div class="cont">
+            <div class="case">
+                <p>Password generator</p>
+                <div class="uname1">
+                    <label for="">Username :</label>
+                    <input id="uname" type="text" placeholder="Enter Your Username ">
+
+                </div>
+                <div class="pwd1">
+                    <label for="">Password :</label>
+                    <input id="pwd" type="text" placeholder="Enter Your Password ">
+
+                </div>
+                <div class="col">
+                    <label for="">Pwd Strength:</label>
+                    <div id="specifier"></div>
+                </div>
+                <div class="sub">
+
+                    <input id="btn" type="button" value="Submit">
+                </div>
+            </div>
+
+        </div>
+    </div>
+    <div class="container1">
+        <h3>Password generator</h3>
+        <div id="cont1">
+            <div id="align">
+
+                <div id="checka">
+                    <label for="check1">Strong</label>
+                    <input type="checkbox" name="inp" id="check1" value="yes">
+
+                </div>
+                <div id="checkb">
+                    <label for="check2">Weak</label>
+                    <input type="checkbox" name="inp" id="check2" value="yes">
+
+                </div>
+                <div id="checkc">
+                    <label for="check3">Super-Strong</label>
+                    <input type="checkbox" name="inp" id="check3" value="yes">
+
+                </div>
+                <div id="checkd">
+                    <label for="check4">Funny</label>
+                    <input type="checkbox" name="inp" id="check4" value="yes">
+
+                </div>
+                
+                
+            </div>
+            <div id="para"></div>
+            <div id="bottombtn">
+                <input type="button" id="btn1" value="Generate Password">
+
+            </div>
+        </div>
+    </div>
+</body>
+
+</html>
+<script src="task7.js"></script>
